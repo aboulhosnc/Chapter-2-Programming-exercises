@@ -1,0 +1,57 @@
+System.out.println("Programing Exercise 16");
+    System.out.println("Write a program that reads an integer and breaks it into a sequense of individual digits");
+    System.out.println();
+    System.out.print("What is your integer that is not negative and not more than 5 digits");
+    int userNumber16 = in.nextInt();
+    String userString16 = Integer.toString(userNumber16);
+    int lengthString16 = userString16.length();
+    
+    int tenThousands16 = userNumber16 / 10000; //first character
+    userNumber16 = userNumber16 % 10000; // remainder
+    
+    int thousands16 = userNumber16 / 1000; //second character
+    userNumber16 = userNumber16 % 1000; // remainder of number
+    
+    int hundreds16 = userNumber16 / 100; // third character
+    userNumber16 = userNumber16 % 100; // remainder of number
+    
+    int tens16 = userNumber16 / 10; // fourth character
+    userNumber16 = userNumber16 % 10; // remaining of number
+    
+    int single16 = userNumber16;
+    
+    /*int tenThousands16 = userNumber16 / 10000; //first character
+    int thousands16 = (userNumber16 % 10000 ) / 1000; // second character
+    int hundreds16 = (userNumber16 % 1000) / 100; // third character
+    int tens16 = (userNumber16 % 100) / 10; // fourth character
+    int single16 = (userNumber16 % 10); // fifth character
+    */
+    System.out.println("Your number is: " + tenThousands16 + " " + thousands16 + " " + hundreds16 + " " + tens16 + " " + single16);
+      
+   
+    /*char chString1 = userString16.charAt(0);
+    char chString2 = userString16.charAt(1);
+    char chString3 = userString16.charAt(2);
+    char chString4 = userString16.charAt(3);
+    char chString5 = userString16.charAt(4);
+    if (lengthString16 >= 5)
+    {
+      System.out.println("Your number is: " + chString1 + " " + chString2 + " " + chString3 + " " + chString4 + " " + chString5);
+    }
+    else if (lengthString16 >= 4)
+    {
+      System.out.println("Your number is: " + chString1 + " " + chString2 + " " + chString3 + " " + chString4);
+    }
+    else if (lengthString16 >= 3)
+    {
+      System.out.println("Your number is: " + chString1 + " " + chString2 + " " + chString3);
+    }
+    else if (lengthString16 >= 2)
+    {
+      System.out.println("Your number is: " + chString1 + " " + chString2);
+    }
+    else  
+    {
+      System.out.println("Your number is: " + chString1);
+    }
+    */
